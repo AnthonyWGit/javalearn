@@ -1,5 +1,5 @@
 //This will allow us to import as a package all the classes and their methods below
-package somepackage;
+package com.somepackage;
 
 public class Main {
     //Main function should always be static and public to be accessible 
