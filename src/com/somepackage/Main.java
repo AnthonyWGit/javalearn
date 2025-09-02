@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args){
         System.out.println("Hello world");
         com.secondarypackage.NewClass.callingLines(5);
+        com.secondarypackage.NewClass.referenceType();
     }
 
     public static void printLines(int numberOfLines){
