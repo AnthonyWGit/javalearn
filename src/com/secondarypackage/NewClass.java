@@ -17,6 +17,7 @@ public class NewClass {
     public static void referenceType(){
         //Date are of reference type ; has to be converted to a String type to be readable in console;
         Date aDate = new Date();
+        System.out.println(aDate);
         Instant instantDate = aDate.toInstant();
         LocalDateTime localDateTime = LocalDateTime.ofInstant(instantDate, ZoneId.systemDefault());
         DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
