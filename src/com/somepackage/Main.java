@@ -13,6 +13,8 @@ public class Main {
         com.secondarypackage.NewClass.referenceType();
         arrayEx();
         matrixArray();
+        constants();
+        arithmetics();
     }
 
     public static void printLines(int numberOfLines){
@@ -32,7 +34,8 @@ public class Main {
         System.out.println(Arrays.toString(nexArray)); //it will print the adress in memory
     }
 
-    public static void matrixArray(){
+    public static void matrixArray() //void because it doesn't need to return anything 
+    {
         int[][] matrixArray = new int[5][4];
         int[][] secondMatrixArray = { {1,2,2,5}, {3,7,5} };
         System.out.println("matrixArray");
@@ -40,6 +43,23 @@ public class Main {
             System.out.println(secondMatrixArray[k]);
         }
         System.out.println(Arrays.deepToString(secondMatrixArray)); //needed to print multi dimentional arrays 
+    }
+
+    public static void constants()
+    {
+        final float pi = 3.14F; //F for float - final to declare constants  
+        System.out.println(pi);
+    }
+
+    public static void arithmetics()
+    {
+        int num1 = 5;
+        int num2 = 2;
+        int res = num1/num2; // will output 2 cause the division of 2 ints are an int as result 
+        double res2 = (double)num1/num2; // casting so we have a double for result 
+        System.out.println(res);
+        System.out.println(res2);
+        System.out.println(res + res2);
     }
 }
 
