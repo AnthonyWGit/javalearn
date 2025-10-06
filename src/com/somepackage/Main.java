@@ -16,6 +16,7 @@ public class Main {
         constants();
         arithmetics();
         moreArithmetivs();
+        casting();
     }
 
     public static void printLines(int numberOfLines){
@@ -76,6 +77,16 @@ public class Main {
         //compound assignement operators
         comp *= 2; //mtiply the value of comp by 2
         System.out.println(comp);
+    }
+    public static void casting()
+    {
+        // Implicit casting
+        short x = 1;
+        int y = x + 2;
+        System.out.println(y);   
+        //short = 2 bytes ; int = 4 bytes so short is auto coonverted into int 
+        //implicit casting happens when we won't loose data 
+        //byte > short > int > long > float > double      
     }
 }
 
