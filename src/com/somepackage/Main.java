@@ -34,12 +34,12 @@ public class Main {
 
     public static void matrixArray(){
         int[][] matrixArray = new int[5][4];
-        int[][] secondMatrixArray = { {1,2,2,5}, {3,7,5}};
+        int[][] secondMatrixArray = { {1,2,2,5}, {3,7,5} };
         System.out.println("matrixArray");
         for (int k=0; k< secondMatrixArray.length; k++){
             System.out.println(secondMatrixArray[k]);
         }
-        System.out.println(Arrays.deepToString(secondMatrixArray));
+        System.out.println(Arrays.deepToString(secondMatrixArray)); //needed to print multi dimentional arrays 
     }
 }
 
