@@ -15,6 +15,7 @@ public class Main {
         matrixArray();
         constants();
         arithmetics();
+        moreArithmetivs();
     }
 
     public static void printLines(int numberOfLines){
@@ -60,6 +61,21 @@ public class Main {
         System.out.println(res);
         System.out.println(res2);
         System.out.println(res + res2);
+    }
+
+    public static void moreArithmetivs()
+    {
+        int comp = 1;
+        int x = 1;
+        System.out.println(x);
+        int y = x++; //prints 1
+        System.out.println(y);
+        int x2 = 1;
+        int z = ++x2; //prints 2 
+        System.out.println(z);
+        //compound assignement operators
+        comp *= 2; //mtiply the value of comp by 2
+        System.out.println(comp);
     }
 }
 
