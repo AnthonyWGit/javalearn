@@ -108,11 +108,11 @@ public class Main {
         System.out.println(res); 
 
         float y=5.25F;
-        int res2=(int)Math.ceil(y) //we need to cast because base math round returns a double
+        int res2=(int)Math.ceil(y); //we need to cast because base math round returns a double
         System.out.println(res2); //ceil returns a number higher than the base eg ceil 3.3 is 4 
 
-        float z=87.3;
-        int res3= int()Math.floor(z);
+        float z=87.3F;
+        int res3= (int)Math.floor(z);
         System.out.println(res3);
     }
 }
