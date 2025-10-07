@@ -1,6 +1,7 @@
 //This will allow us to import as a package all the classes and their methods below
 package com.somepackage;
 import java.lang.reflect.Array;
+import java.text.NumberFormat;
 import java.util.Arrays;
 
 import com.secondarypackage.*;
@@ -114,6 +115,25 @@ public class Main {
         float z=87.3F;
         int res3= (int)Math.floor(z);
         System.out.println(res3);
+
+        int res4 = Math.max(res2, res3);
+        System.out.println(res4);
+
+        int res5 = Math.min(res,res3);
+        System.out.println(res5);
+
+        double randomValue = Math.random(); //random takes double  - result betwwen 0 and 1     
+        System.out.println(randomValue);
+
+        int funnyResult = (int)Math.round(Math.random() * 100) ;
+        System.out.println(funnyResult);
+    }
+
+    public static void formattingNumbers()
+    {
+        NumberFormat currency = NumberFormat.getCurrencyInstance(); //NumberFormat is an abstract class so we can't use new to instanciate an objecct of this class
+        currency.format(1248465.69);
+        System.out.println(currency); 
     }
 }
 
