@@ -17,6 +17,7 @@ public class Main {
         arithmetics();
         moreArithmetivs();
         casting();
+        maths();
     }
 
     public static void printLines(int numberOfLines){
@@ -78,6 +79,7 @@ public class Main {
         comp *= 2; //mtiply the value of comp by 2
         System.out.println(comp);
     }
+
     public static void casting()
     {
         // Implicit casting
@@ -87,6 +89,31 @@ public class Main {
         //short = 2 bytes ; int = 4 bytes so short is auto coonverted into int 
         //implicit casting happens when we won't loose data 
         //byte > short > int > long > float > double      
+        // explicit casting
+        double x2 = 1.2;
+        int y2 = (int)x2 + 2;
+        System.out.println(y2);
+        //if x2 was a string we couldn't cast a string into a doouble. We need those variables to be compatible 
+        // solution -> parseInt 
+        String x3 = "3";
+        double y3 = Double.parseDouble(x3) + 3;
+        System.out.println(y3);
+        //Beware String is case sensitive ! 
+    }
+
+    public static void maths()
+    {
+        float x=1.2F;
+        int res=Math.round(x);
+        System.out.println(res); 
+
+        float y=5.25F;
+        int res2=(int)Math.ceil(y) //we need to cast because base math round returns a double
+        System.out.println(res2); //ceil returns a number higher than the base eg ceil 3.3 is 4 
+
+        float z=87.3;
+        int res3= int()Math.floor(z);
+        System.out.println(res3);
     }
 }
 
