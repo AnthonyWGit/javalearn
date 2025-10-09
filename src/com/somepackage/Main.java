@@ -1,9 +1,11 @@
 //This will allow us to import as a package all the classes and their methods below
 package com.somepackage;
+import java.io.PrintStream;
 import java.lang.reflect.Array;
+import java.nio.charset.Charset;
 import java.text.NumberFormat;
 import java.util.Arrays;
-
+import java.util.Locale;
 import com.secondarypackage.*;
 
 public class Main {
@@ -19,6 +21,7 @@ public class Main {
         moreArithmetivs();
         casting();
         maths();
+        formattingNumbers();
     }
 
     public static void printLines(int numberOfLines){
@@ -131,9 +134,17 @@ public class Main {
 
     public static void formattingNumbers()
     {
-        NumberFormat currency = NumberFormat.getCurrencyInstance(); //NumberFormat is an abstract class so we can't use new to instanciate an objecct of this class
-        currency.format(1248465.69);
-        System.out.println(currency); 
+        Locale usLocale = Locale.US;
+        Locale frLocale = Locale.FRANCE;
+        NumberFormat currencyUS = NumberFormat.getCurrencyInstance(usLocale); //NumberFormat is an abstract class so we can't use new to instanciate an objecct of this class
+        NumberFormat currencyFR = NumberFormat.getCurrencyInstance(frLocale);
+        NumberFormat percent = NumberFormat.getPercentInstance();
+        String res2 = percent.format(4);
+        String res = currencyUS.format(1248465.69);
+        String res3 = currencyFR.format(1248465.69);
+        System.out.println(res + " currency");
+        System.out.println(res2); 
+        System.out.println(res3);
     }
 }
 
