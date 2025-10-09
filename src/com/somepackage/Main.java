@@ -154,8 +154,17 @@ public class Main {
     {
         Scanner scanner = new Scanner(System.in); //Beware the syntax !! System not system 
         System.out.print("Age: ");
-        Byte someByte = scanner.nextByte();
-        System.out.println("You are: " + someByte);
-    }
+        // Byte someByte = scanner.nextByte();
+        // System.out.println("You are: " + someByte);
+        try 
+        {
+            Byte someByte = scanner.nextByte();
+            System.out.println("You are: " + someByte);
+        } 
+        catch (java.util.InputMismatchException e) {
+            // Display error message
+            System.out.println("Error: Please enter a valid number between -128 and 127!");
+                }
+            }
 }
 
