@@ -6,6 +6,8 @@ import java.nio.charset.Charset;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Locale;
+import java.util.Scanner;
+
 import com.secondarypackage.*;
 
 public class Main {
@@ -22,6 +24,7 @@ public class Main {
         casting();
         maths();
         formattingNumbers();
+        scanner();
     }
 
     public static void printLines(int numberOfLines){
@@ -145,6 +148,14 @@ public class Main {
         System.out.println(res + " currency");
         System.out.println(res2); 
         System.out.println(res3);
+    }
+
+    public static void scanner()
+    {
+        Scanner scanner = new Scanner(System.in); //Beware the syntax !! System not system 
+        System.out.print("Age: ");
+        Byte someByte = scanner.nextByte();
+        System.out.println("You are: " + someByte);
     }
 }
 
