@@ -24,7 +24,22 @@ public class Main {
         casting();
         maths();
         formattingNumbers();
-        scanner();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("What type of scanner do you want ? 1 or 2 ? Type your answer here:");
+        String choice = scanner.nextLine();
+        System.out.println("You entered " + choice);
+        if (choice.equals("1")) // In java we need to use equals for string because == compares if object is the same in memory 
+        {
+            scanner();
+        }
+        else if (choice.equals("2"))
+        {
+
+        }
+        else
+        {
+
+        }
     }
 
     public static void printLines(int numberOfLines){
