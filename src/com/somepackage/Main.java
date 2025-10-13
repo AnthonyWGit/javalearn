@@ -29,12 +29,13 @@ public class Main {
         String choice = scanner.nextLine();
         System.out.println("You entered " + choice);
         if (choice.equals("1")) // In java we need to use equals for string because == compares if object is the same in memory 
+        // it compares object references
         {
             scanner();
         }
         else if (choice.equals("2"))
         {
-
+            scannerTwo();
         }
         else
         {
@@ -179,6 +180,14 @@ public class Main {
             // Display error message
             System.out.println("Error: Please enter a valid number between -128 and 127!");
         }
+    }
+
+    public static void scannerTwo()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Name ?");
+        String someString = scanner.nextLine();
+        System.out.println("You are " + someString);
     }
 }
 
