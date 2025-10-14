@@ -42,6 +42,7 @@ public class Main {
             numerals();
             credit();
             ternary();
+            admin();
         }
     }
 
@@ -229,7 +230,7 @@ public class Main {
             case "admin":
                 System.out.println("You are admin");
                 break;
-            case "mod";
+            case "mod":
                 System.out.println("You are a mod");
                 break;
             default:
