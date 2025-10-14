@@ -40,6 +40,7 @@ public class Main {
         else
         {
             numerals();
+            credit();
         }
     }
 
@@ -201,8 +202,20 @@ public class Main {
     {
         boolean hasGoodCredit = true;
         boolean hasHighIncome = true;
-        boolean isEligible = hasGoodCredit || hasHighIncome // || or operator like many other languages
+        boolean hasCriminalRecord = false;
+        boolean isEligible = (hasGoodCredit || hasHighIncome) && !hasCriminalRecord; // || or operator like many other languages
+        //To be eligible someone has to have goodCredit or Hihgh incomome AND NOT having a criminal record
         System.out.println(isEligibleS); //very descriptive variables names
+    }
+
+    public static void someFunction()
+    {
+        int income = 150_000;
+        boolean hasHighIncome = true; //It's a good practice to initialize values
+        if (income > 100_000)
+            boolean hasHighIncome = true;
+        else
+            hasHighIncome = false;
     }
 }
 
