@@ -41,6 +41,7 @@ public class Main {
         {
             numerals();
             credit();
+            ternary();
         }
     }
 
@@ -208,14 +209,11 @@ public class Main {
         System.out.println(isEligibleS); //very descriptive variables names
     }
 
-    public static void someFunction()
+    public static void ternary()
     {
         int income = 150_000;
-        boolean hasHighIncome = true; //It's a good practice to initialize values
-        if (income > 100_000)
-            boolean hasHighIncome = true;
-        else
-            hasHighIncome = false;
+        String className = income > 100_000 ? "Rich" : "Economy"; // ternary operator 
+        boolean hasHighIncome = income > 150_000;
     }
 }
 
