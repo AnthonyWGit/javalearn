@@ -39,7 +39,7 @@ public class Main {
         }
         else
         {
-
+            numerals();
         }
     }
 
@@ -186,8 +186,15 @@ public class Main {
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Name ?");
-        String someString = scanner.nextLine();
+        String someString = scanner.nextLine().trim(); //remove white spaces 
         System.out.println("You are " + someString);
+    }
+
+    public static void numerals()
+    {
+        int temperature = 25;
+        boolean isWarm = temperature >= 20 && temperature <= 30;
+        System.out.println(isWarm);
     }
 }
 
