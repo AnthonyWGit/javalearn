@@ -196,5 +196,13 @@ public class Main {
         boolean isWarm = temperature >= 20 && temperature <= 30;
         System.out.println(isWarm);
     }
+
+    public static void credit()
+    {
+        boolean hasGoodCredit = true;
+        boolean hasHighIncome = true;
+        boolean isEligible = hasGoodCredit || hasHighIncome // || or operator like many other languages
+        System.out.println(isEligibleS); //very descriptive variables names
+    }
 }
 
