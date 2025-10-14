@@ -215,5 +215,27 @@ public class Main {
         String className = income > 100_000 ? "Rich" : "Economy"; // ternary operator 
         boolean hasHighIncome = income > 150_000;
     }
+
+    public static void admin()
+    {
+        String role = "admin";
+        // if (role == "admin")
+        //     System.out.println("Your are an admin");
+        // else if (role == "moderator")
+        //     System.out.println("You are a mod");
+        // else 
+        //     System.out.println("You are a peasant");
+        switch (role) {
+            case "admin":
+                System.out.println("You are admin");
+                break;
+            case "mod";
+                System.out.println("You are a mod");
+                break;
+            default:
+                System.out.println("You are nothing");
+                break;
+        }
+    }
 }
 
