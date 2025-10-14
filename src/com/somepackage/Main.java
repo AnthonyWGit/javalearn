@@ -206,7 +206,7 @@ public class Main {
         boolean hasCriminalRecord = false;
         boolean isEligible = (hasGoodCredit || hasHighIncome) && !hasCriminalRecord; // || or operator like many other languages
         //To be eligible someone has to have goodCredit or Hihgh incomome AND NOT having a criminal record
-        System.out.println(isEligibleS); //very descriptive variables names
+        System.out.println(isEligible); //very descriptive variables names
     }
 
     public static void ternary()
