@@ -43,6 +43,8 @@ public class Main {
             credit();
             ternary();
             admin();
+            loopFor();
+            loopWhile();
         }
     }
 
@@ -236,6 +238,30 @@ public class Main {
             default:
                 System.out.println("You are nothing");
                 break;
+        }
+    }
+    public static void loopFor()
+    {
+        //a for loop
+        for (int i = 0; i <5 ; i++)
+            System.out.println("increment : for loop");
+        
+        int i = 5;
+        while (i != 0)
+        {
+            System.out.println("You are in a while loop");
+            i--;
+        }
+    }
+
+    public static void loopWhile()
+    {
+        String input = "";
+        while (!input.equals("quit")) // Can't use the != because it will compare the adresses in memory and not the actual values
+        {
+            System.out.println("Input : ");
+            Scanner scanner = new Scanner(System.in)
+            input = scanner.next(); //This is how to store a strig in Java 
         }
     }
 }
