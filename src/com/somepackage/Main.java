@@ -257,10 +257,10 @@ public class Main {
     public static void loopWhile()
     {
         String input = "";
+        Scanner scanner = new Scanner(System.in)
         while (!input.equals("quit")) // Can't use the != because it will compare the adresses in memory and not the actual values
         {
             System.out.println("Input : ");
-            Scanner scanner = new Scanner(System.in)
             input = scanner.next(); //This is how to store a strig in Java 
         }
     }
