@@ -54,7 +54,10 @@ public class Main {
                     case "while":
                         loopWhile();
                         break;
-                        
+                    
+                    case "fruits":
+                        fruits();
+                        break;
                 }
         }
         scanner.close();
@@ -279,6 +282,15 @@ public class Main {
             System.out.println(input);
         }
         scanner.close();
+    }
+
+    public static void fruits()
+    {
+        String[] fruits = { "Apple" , "Mango", "Orange"};
+        for(int i = 0; i < fruits.length; i++)
+        {
+            System.err.println(fruits[i]);
+        }
     }
 }
 
