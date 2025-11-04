@@ -12,7 +12,8 @@ import com.secondarypackage.*;
 
 public class Main {
     //Main function should always be static and public to be accessible 
-    public static void main(String[] args){
+    public static void main(String[] args)
+    {
         System.out.println("Hello world");
         com.secondarypackage.NewClass.callingLines(5);
         com.secondarypackage.NewClass.referenceType();
@@ -43,9 +44,20 @@ public class Main {
             credit();
             ternary();
             admin();
-            loopFor();
-            loopWhile();
+            String choiceTwo = scanner.next().toLowerCase();
+            switch(choiceTwo)
+                {
+                    case "for":
+                        loopFor();
+                        break;
+
+                    case "while":
+                        loopWhile();
+                        break;
+                        
+                }
         }
+        scanner.close();
     }
 
     public static void printLines(int numberOfLines){
@@ -179,6 +191,7 @@ public class Main {
         {
             Byte someByte = scanner.nextByte();
             System.out.println("You are: " + someByte);
+            scanner.close();
         } 
         catch (java.util.InputMismatchException e) 
         {
@@ -193,6 +206,7 @@ public class Main {
         System.out.println("Name ?");
         String someString = scanner.nextLine().trim(); //remove white spaces 
         System.out.println("You are " + someString);
+        scanner.close();
     }
 
     public static void numerals()
@@ -247,22 +261,19 @@ public class Main {
             System.out.println("increment : for loop");
         
         int i = 5;
-        while (i != 0)
-        {
-            System.out.println("You are in a while loop");
-            i--;
-        }
     }
 
     public static void loopWhile()
     {
         String input = "";
-        Scanner scanner = new Scanner(System.in)
+        Scanner scanner = new Scanner(System.in);
         while (!input.equals("quit")) // Can't use the != because it will compare the adresses in memory and not the actual values
         {
             System.out.println("Input : ");
-            input = scanner.next(); //This is how to store a strig in Java 
+            input = scanner.next().toLowerCase(); //This is how to store a strig in Java 
+            System.out.println(input);
         }
+        scanner.close();
     }
 }
 
