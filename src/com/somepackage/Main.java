@@ -287,9 +287,13 @@ public class Main {
     public static void fruits()
     {
         String[] fruits = { "Apple" , "Mango", "Orange"};
-        for(int i = 0; i < fruits.length; i++)
-        {
-            System.err.println(fruits[i]);
+        // for(int i = 0; i < fruits.length; i++)
+        // {
+        //     System.err.println(fruits[i]);
+        // }
+        //Below forEach loop. Beware of the limitations : forEach are forward only / Can't extract index if you need it 
+        for (String fruit : fruits){
+            System.out.println(fruit);
         }
     }
 }
