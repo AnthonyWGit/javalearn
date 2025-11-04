@@ -270,7 +270,7 @@ public class Main {
         while (!input.equals("quit")) // Can't use the != because it will compare the adresses in memory and not the actual values
         {
             System.out.println("Input : ");
-            input = scanner.next().toLowerCase(); //This is how to store a strig in Java 
+            input = scanner.next().toLowerCase(); //This is how to store a strig in Java | because of next it will take one ord only 
             System.out.println(input);
         }
         scanner.close();
