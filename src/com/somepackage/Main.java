@@ -267,10 +267,15 @@ public class Main {
     {
         String input = "";
         Scanner scanner = new Scanner(System.in);
-        while (!input.equals("quit")) // Can't use the != because it will compare the adresses in memory and not the actual values
+        while (true) //when using while true always make sure there is a break somewhere in the loop 
+        // Can't use the != because it will compare the adresses in memory and not the actual values 
         {
             System.out.println("Input : ");
-            input = scanner.nextLine().toLowerCase(); //This is how to store a strig in Java |if next and not nextLine then it will take only one word 
+            input = scanner.nextLine().toLowerCase(); //This is how to store a strig in Java |if next and not nextLine then it will take only one word
+            if (input.equals("pass"))
+                continue;
+            if (input.equals("quit"))
+                break; //for no echo when quit  
             System.out.println(input);
         }
         scanner.close();
